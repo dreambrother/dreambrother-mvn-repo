@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <plugins>
+    <plugin>
+      <name>jLoad Maven Plugin</name>
+      <prefix>jload</prefix>
+      <artifactId>jload-maven-plugin</artifactId>
+    </plugin>
+  </plugins>
+</metadata>
