@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.dreambrother</groupId>
+    <artifactId>lightweight-java-logger</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Lightweight Java Logger</name>
+    <url>https://github.com/dreambrother</url>
+    
+    <parent>
+        <groupId>com.github.dreambrother</groupId>
+        <artifactId>lightweight-java-logger-parent</artifactId>
+        <version>1.0</version>
+    </parent>
+    
+    <repositories>
+        <repository>
+            <id>dreambrother-mvn-repo</id>
+            <url>https://raw.github.com/dreambrother/dreambrother-mvn-repo/master/releases</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>dreambrother-mvn-repo</id>
+            <url>https://raw.github.com/dreambrother/dreambrother-mvn-repo/master/releases</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.9</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.easymock</groupId>
+            <artifactId>easymock</artifactId>
+            <version>3.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.dreambrother</groupId>
+            <artifactId>jload</artifactId>
+            <version>1.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.dreambrother</groupId>
+                <artifactId>jload-maven-plugin</artifactId>
+                <version>1.0</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
